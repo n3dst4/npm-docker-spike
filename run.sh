@@ -8,4 +8,4 @@ src=src
 cd $directory
 rm -rf ${tmp}
 cp -a $src $tmp
-docker run -it --volume=${directory}/${tmp}:/${src} node:14 bash
+docker run -it --volume=${directory}/${tmp}:/mounted node:14 /mounted/run_tests.sh
