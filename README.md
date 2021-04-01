@@ -12,7 +12,7 @@ It will take a few minutes.
 
 The test will
 
-1. Spin up a docker image of node 14, which comes with npm 6.14.11 at the time of writing.
+1. Spin up a docker image of node 14, which comes with npm 6.14.11 at the time of writing (this step may take a while if you don't have the `node:14` image cached locally.)
 2. Mount a volume containing a small but realistic `package.json`.
 3. Run `npm install` three times in that mounted volume and print out the times (cleaning out before each run).
 4. Copy the `package.json` to a "local" folder (not a bind mount) and run `npm install` three times in that folder too.
